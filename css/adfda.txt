@@ -1,0 +1,96 @@
+/* html, body{
+ display: grid;
+ height: 100%;
+ place-items: center;
+} */
+
+.card-wrapper {
+    margin-top: 45px;
+    padding-left: 45px;
+
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
+}
+
+.card-wrapper .card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    border-radius: 15px;
+    transform: rotateY(0deg);
+    padding: 4px;
+    transform-style: preserve-3d;
+    transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+.card-wrapper:hover > .front-face{
+    transform: rotateY(-180deg);
+}
+.card-wrapper .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-wrapper .back-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+}
+
+.card-wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+}
+
+.card-wrapper .back-face img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(375deg, #0a5b64, #d86609);
+}
+
+.card-wrapper .back-face .info {
+    text-align: center;
+}
+
+.back-face .info .title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.back-face ul {
+    display: flex;
+}
+
+
+.back-face ul a {
+    display: block;
+    text-align: center;
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-right: 22px;
+    border-radius: 50%;
+    background-color: rgb(4, 29, 82);
+    line-height: 2.9rem;
+    font-size: 22px;
+    color: white;
+}
+
+.back-face ul a:hover {
+    font-size: 12px;
+}
+
+/* .back-face ul a:hover{
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgb(11, 179, 39));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgb(11, 179, 39));
+} */

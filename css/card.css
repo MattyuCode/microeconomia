@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+.cards {
+    padding: 70px 0 190px 0;
+    /* top: -20px; */
+    min-width: 100%;
+    background: #0F2027;
+}
+
+.cards h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: azure;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.card-wrapper {
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /* padding-left: 3%; */
+    float: left;
+    margin-left: 6%;
+}
+
+.card-wrapper .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    background: #43cea2;
+    background: -webkit-linear-gradient(to top, hsl(212, 93%, 33%), hsl(182, 59%, 54%));
+    background: linear-gradient(to top, hsl(212, 93%, 33%), hsl(182, 59%, 54%));
+    border-radius: 15px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.card-wrapper:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.card-wrapper .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-wrapper .back-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+}
+
+.card-wrapper:hover>.back-face {
+    transform: rotateY(0deg);
+}
+
+.card-wrapper .back-face img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(375deg, #00e5ff, #f7fc00, #fc0000);
+}
+
+.card-wrapper .back-face .info {
+    text-align: center;
+}
+
+.card-wrapper .back-face .info p {
+    color: wheat;
+}
+
+.back-face .info .title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.back-face ul {
+    display: flex;
+    margin-right: 36px;
+}
+
+
+.back-face ul a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: white;
+    text-align: center;
+    margin: 0 5px;
+    /* margin-right: 22px; */
+    line-height: 38px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    font-size: 22px;
+}
+
+.back-face .soc i {
+    line-height: 41px;
+}
+
+.back-face .soc i:hover {
+    transform: scale(1.1);
+    /*Para que se agrande los (i) cuando se pasa el mouse*/
+}
+
+.soc .twit {
+    background: #0591ee;
+    color: #fff;
+}
+
+.soc .twit:hover {
+    background: #fff;
+    color: #0591ee;
+}
+
+.soc .face {
+    background: rgb(7, 70, 129);
+    color: rgb(253, 253, 253);
+}
+
+.soc .face:hover {
+    background: rgb(253, 253, 253);
+    color: rgb(7, 70, 129);
+}
+
+.soc .what {
+    background: rgb(11, 179, 39);
+    color: rgb(253, 253, 253);
+}
+
+.soc .what:hover {
+    background: rgb(253, 253, 253);
+    color: rgb(11, 179, 39);
+}
+
+.soc .you {
+    background: rgb(216, 10, 10);
+    color: rgb(253, 253, 253);
+}
+
+.soc .you:hover {
+    background: rgb(253, 253, 253);
+    color: rgb(216, 10, 10);
+}
+
+.soc .git {
+    background: rgb(5, 5, 5);
+    color: rgb(253, 253, 253);
+}
+
+.soc .git:hover {
+    background: rgb(253, 253, 253);
+    color: rgb(5, 5, 5);
+}
+
+.soc .inst {
+    background: linear-gradient(320deg, rgb(214, 12, 12), rgb(51, 4, 31));
+    color: #fff;
+}
+
+.soc .inst:hover {
+    background: #fff;
+    color: #7e0707;
+}
+
+
+@media screen and (max-width:750px) {
+    .card-wrapper {
+        width: 70%;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .card-wrapper {
+        width: 70%;
+        padding-left: 50px;
+    }
+}

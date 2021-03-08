@@ -1,0 +1,384 @@
+.navbar {
+    z-index: 1;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Carter One', cursive;
+    font-size: 23px;
+}
+
+.collapse .mr-auto .dropdown .meti a:hover {
+    background: #162146;
+    color: #ebfc05;
+}
+
+.collapse .dropdown-menu-right a:hover {
+    background: #08a9be;
+    color: #ffffff;
+}
+
+.top-nav-collapse {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(7, 2, 13, 0.959)), to(rgba(14, 105, 196, 0.973)));
+    background: linear-gradient(to right, rgba(7, 2, 13, 0.979), rgba(14, 105, 196, 0.973)) !important;
+}
+
+/* .top-nav-collapse  ul li a{
+    color: rgb(255, 0, 0);
+} es de cambiar el navbar-dark A ligh
+t */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background: #2980b9;
+        background: -webkit-linear-gradient(to top, #125348, #2980b9);
+        background: linear-gradient(to top, #125348, #2980b9);
+    }
+
+    .navbar button:hover {
+        border: solid 1px#cccbcb9d;
+        background: hsla(212, 28%, 13%, 0.164);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .collapse .dropdown-menu-right {
+        left: 10px;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+#home {
+    background-image: url(../image/contact.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 112vh;
+    /* padding-top: 50px; */
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    /* padding-top: 80px; */
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contact .content p {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+#home .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+#home .container .contactInfo {
+    border: 1px solid rgb(0, 183, 255);
+    padding: 20px;
+    background: rgba(17, 20, 22, 0.623);
+    width: 50%;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#home .container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+#home .container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: hsla(0, 0%, 79%, 0.144);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+#home .container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+#home .container .contactInfo .box .text h3 {
+    color: aqua;
+    font-weight: 400;
+}
+
+
+#home .container .contactForm {
+    border: 1px solid red;
+    background: hsla(0, 0%, 79%, 0.144);
+    /* height: 70%; */
+    width: 50%;
+    padding: 40px;
+    padding-top: 5px;
+    margin-left: 15px;
+}
+
+.contactForm h2 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contactForm .inputBox input {
+    height: 40px;
+}
+
+.contactForm .inputBox textarea {
+    height: 180px;
+
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+
+/* -------footer---------- */
+
+.bg-black {
+    padding: 10px 0 20px;
+    background-image:url(../image/Contact/demo-image-02.jpg);
+    /* background: -webkit-linear-gradient(to top, hsla(0, 0%, 0%, 0.897), hsla(211, 68%, 6%, 0.308), hsla(0, 93%, 44%, 0));
+    background: linear-gradient(to top, hsla(0, 0%, 0%, 0.925), hsla(209, 66%, 7%, 0.288), hsla(0, 100%, 46%, 0)) !important; */
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+.social {
+    margin-top: 1rem;
+    padding: 0px 0 15px;
+}
+
+.social a {
+    text-align: center;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 100%;
+    line-height: 2.9rem;
+    font-size: 22px;
+}
+
+.social .face {
+    background: rgb(7, 70, 129);
+    color: rgb(253, 253, 253);
+}
+
+.social .git {
+    background: rgb(5, 5, 5);
+    color: rgb(253, 253, 253);
+}
+
+.social .git:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgb(0, 0, 0), to, rgb(185, 185, 185));
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(185, 185, 185));
+}
+
+.social .yout {
+    background: rgb(216, 10, 10);
+    color: rgb(253, 253, 253);
+}
+
+.social .yout:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgba(255, 0, 0, 0.863));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgba(255, 0, 0, 0.863));
+}
+
+
+.social .what {
+    background: rgb(11, 179, 39);
+    color: rgb(253, 253, 253);
+}
+
+.social .what:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.969), to, rgb(11, 179, 39));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.969), rgb(11, 179, 39));
+}
+
+.social .twit {
+    background: rgb(15, 104, 187);
+    color: rgb(253, 253, 253);
+}
+
+
+.social a:hover {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, top rgba(7, 2, 13, 0.959)), to(rgba(36, 189, 216, 0.966));
+    background: linear-gradient(to top, rgba(7, 2, 13, 0.959), rgba(36, 189, 216, 0.966));
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+}
+
+.social a:active {
+    color: rgb(0, 0, 0);
+}
+
+footer .container {
+    margin-top: 12px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+footer .container p {
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+footer hr {
+    border-color: #1e38af;
+    border-width: 0.15rem;
+    margin-right: 2rem;
+    padding: 0 0 12px;
+}
+
+@media screen and (max-width:550px) {
+    .social {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.assignin {
+    border: 1px solid rgb(46, 48, 48);
+    /* justify-content: center; */
+/* text-align: center; *
+    background: rgba(17, 20, 22, 0.438);
+    padding: 40px;
+    width: 350px;
+    margin: auto;
+    margin-top: 147px;
+    height: 380px;
+    margin-left: 185x;
+}
+
+form {
+    width: 240px;
+    text-align: center;
+}
+
+input {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(0, 247, 255);
+    font-family: fantasy;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type=button] {
+    border: none;
+    width: 190px;
+    background: rgb(255, 255, 255);
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+}
+
+form h2 {
+    color: #fff;
+}
+
+form a {
+    
+    text-decoration: blink;
+    color: rgb(206, 206, 20);
+}
+
+form a:hover {
+    color: rgb(0, 225, 255);
+}
+
+form .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+::placeholder{
+    color: aliceblue;
+    opacity: 0.8;
+} */

@@ -1,0 +1,189 @@
+@import url(../Reloj/digital.css);
+
+.navbar {
+    z-index: 1;
+}
+
+.navbar {
+    background-color: #071f25;
+}
+
+.navbar .container .regre i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.navbar .container .regre a {
+    color: #fff;
+}
+
+.container .regre a:hover {
+    font-size: 17px;
+    color: #05e0fd;
+}
+
+.navbar .container .regre img {
+    margin-left: 15px;
+}
+
+/* --------------------------- */
+
+.navbar .navbar-brand {
+    font-family: 'Carter One', cursive;
+    font-size: 23px;
+}
+
+.collapse .dropdown-menu-right a:hover {
+    background: #08a9be;
+    color: #ffffff;
+}
+
+.top-nav-collapse {
+    background: -webkit-linear-gradient(to right, #005baf, #dfd0d0, #ff0000);
+    background: linear-gradient(to right, #005baf, #d8c0c0, #ff0000);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background: #2980b9;
+        background: -webkit-linear-gradient(to top, #18222c, #2980b9);
+        background: linear-gradient(to top, #18222c, #2980b9);
+    }
+
+    .navbar button:hover {
+        border: solid 1px#cccbcb9d;
+        background: hsla(212, 28%, 13%, 0.164);
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .collapse .dropdown-menu-right {
+        left: 10px;
+    }
+}
+
+
+/*
+.clock{
+    width: 500px;
+    height: 500px;
+    / background: linear-gradient(320deg, #265275, #691b1b); *
+    background: rgb(175, 169, 169);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50%;
+    border: 15px solid rgb(224, 131, 9);
+    box-shadow: inset 0px 0px 20px 3px #000000;
+}*/
+
+#reloj {
+    background: #091921;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.reloj .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clock {
+    margin-top: 10%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../Reloj/clock.png);
+    background-size: cover;
+    border: 4px solid #091921;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px hsla(204, 73%, 34%, 0.39),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(255, 9, 9, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.clock .hora,
+.clock .minuto,
+.clock .segundo {
+    position: absolute;
+}
+
+.clock .hora .hr {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .minuto .mn {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .segundo .sc {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .hora .hr {
+    width: 230px;
+    height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* position: absolute; */
+    border-radius: 50%;
+}
+
+.hr:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 85px;
+    background: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+    padding-bottom: 110px;
+}
+
+.mn:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #10f7ff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 145px;
+    background: #ffffff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+    margin-top: -40px;
+}

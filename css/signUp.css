@@ -1,0 +1,147 @@
+.navbar {
+    z-index: 1;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Carter One', cursive;
+    font-size: 23px;
+}
+
+.collapse .mr-auto .dropdown .meti a:hover {
+    background: #162146;
+    color: #ebfc05;
+}
+
+.collapse .dropdown-menu-right a:hover {
+    background: #08a9be;
+    color: #ffffff;
+}
+
+.top-nav-collapse {
+    background: #2c3e50;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(7, 2, 13, 0.959)), to(rgba(14, 105, 196, 0.973)));
+    background: linear-gradient(to right, rgba(7, 2, 13, 0.979), rgba(14, 105, 196, 0.973)) !important;
+}
+
+/* .top-nav-collapse  ul li a{
+    color: rgb(255, 0, 0);
+} es de cambiar el navbar-dark A ligh
+t */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background: #2980b9;
+        background: -webkit-linear-gradient(to top, #125348, #2980b9);
+        background: linear-gradient(to top, #125348, #2980b9);
+    }
+
+    .navbar button:hover {
+        border: solid 1px#cccbcb9d;
+        background: hsla(212, 28%, 13%, 0.164);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .collapse .dropdown-menu-right {
+        left: 10px;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+#home {
+    background-image: url(../image/contact.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#home .row {
+    width: 100%;
+    height: 100%;
+}
+
+
+.signup {
+    border: 1px solid rgb(46, 48, 48);
+    background: rgba(17, 20, 22, 0.438);
+    padding: 40px;
+    width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    height: 425px;
+    /* margin-left: 185px; */
+}
+
+form {
+    width: 240px;
+    text-align: center;
+}
+
+input {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(0, 247, 255);
+    font-family: fantasy;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type=button] {
+    border: none;
+    width: 190px;
+    background: rgb(255, 255, 255);
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+}
+
+form h2 {
+    color: #fff;
+}
+
+form a {
+
+    text-decoration: blink;
+    color: rgb(206, 206, 20);
+}
+
+form a:hover {
+    color: rgb(0, 225, 255);
+}
+
+form  .msg{
+    margin-top: 25px;
+    color: white;
+    font-size: 1.2em;
+}
+form .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+::placeholder{
+    color: aliceblue;
+    opacity: 0.8;
+}

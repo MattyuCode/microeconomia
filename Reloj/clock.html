@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock-Mattyu</title>
+    <link rel="stylesheet icon" type="image/x-icon" href="../image/iM.C.png">
+
+    <!-- Style Principal-->
+    <link rel="stylesheet" href="../Reloj/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body onload="initClock()">
+    <!-- vANbAR  -->
+    <nav class="navbar navbar-expand-lg  navbar-dark fixed-top scrolling-navbar">
+        <!--navbar-dark-->
+        <div class="container">
+            <div class="regre">
+                <a href="../index.html"><i class="fa fa-chevron-left"></i> <strong>Regresar</strong></a>
+                <img src="../image/iM.C.png" height="50" alt="Responsibe" title="Mattyu-System"></a>
+            </div>
+
+            <!-- <a class="navbar-brand" href="#inicio"><span>Proyect-Micro</span></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contac.html"><i class="fas fa-mobile-alt"></i>Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a target="_blank" href="https://github.com/MattyuCode/Apk-Android.git"
+                            class="nav-link waves-effect waves-light">
+                            <i class="fab fa-github"></i> Github
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" href="https://twitter.com/MattyuCoder"
+                            class="nav-link waves-effect waves-light">
+                            <i class="fab fa-twitter"></i>Twitter
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="https://mattyucode.web.app/index.html">Página Web </a>
+                            <a class="dropdown-item" href="https://proyect-9fd36.web.app/">Sal Negra SMI</a>
+                            <a class="dropdown-item" href="clock.html">Página del
+                                Reloj</a>
+                            <a target="_blank" class="dropdown-item"
+                                href="https://www.youtube.com/channel/UCMekmHf8jji7mEJoZhFajeQ?view_as=subscriber">Suscríbete
+                                en Youtube</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-itkem avatar">
+                        <a class="nav-link p-0" hrefk="#">
+                            <img src="../image/matu.jpg" title="Mattyu-System" class="rounded-circle z-depth-0"
+                                alt="avatar image" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="reloj" class="reloj">
+            <div class="container">
+                <div class="clock">
+                    <div class="hora">
+                        <div class="hr" id="hr"></div>
+                    </div>
+                    <div class="minuto">
+                        <div class="mn" id="mn"></div>
+                    </div>
+                    <div class="segundo">
+                        <div class="sc" id="sc"></div>
+                    </div>
+                </div>
+
+                <!--digital clock start-->
+                <div class="datetime">
+                    <div class="date">
+                        <span id="nombredia">Dia</span>,
+                        <span id="numerodia">00</span>
+                        <span>de</span>
+                        <span id="mes">Mes</span>
+                        <span>del</span>
+                        <span id="Año">Año</span>
+                    </div>
+                    <div class="time">
+                        <span id="hora">00</span>:
+                        <span id="minu">00</span>:
+                        <span id="seco">00</span>
+                        <span id="veri">AM</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <script>
+                const deg = 6;
+                const hr = document.querySelector('#hr');
+                const mn = document.querySelector('#mn');
+                const sc = document.querySelector('#sc');
+
+                setInterval(() => {
+                    let day = new Date();
+                    let hh = day.getHours() * 30;
+                    let mm = day.getMinutes() * deg;
+                    let ss = day.getSeconds() * deg;
+
+                    hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg`;
+                    mn.style.transform = `rotateZ(${mm}deg)`;
+                    sc.style.transform = `rotateZ(${ss}deg)`;
+                })
+            </script> -->
+        </section>
+
+
+    </main>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- scrollrevealjs -->
+    <script src="JavaScript/scrollrevealjs.js"></script>
+    <script src="../Reloj/code.js"></script>
+    <script src="../Reloj/digit.js"></script>
+</body>
+
+</html>
